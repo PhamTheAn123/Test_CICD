@@ -59,9 +59,4 @@ describe('validateDate', () => {
   it('should return null for December 31st', () => {
     expect(validateDate('2023-12-31')).toBeNull();
   });
-
-  // Test case cố tình sai để kiểm tra CI/CD
-  it('should fail intentionally to test CI/CD pipeline', () => {
-    expect(validateDate('2023-12-31')).toBe('This should fail'); // Cố tình sai
-  });
 });
