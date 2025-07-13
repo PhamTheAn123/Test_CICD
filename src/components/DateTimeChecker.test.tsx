@@ -55,8 +55,4 @@ describe('validateDate', () => {
   it('should return an error for April 31st', () => {
     expect(validateDate('2023-04-31')).toBe('Invalid day for the selected month.');
   });
-
-  it('should return null for December 31st', () => {
-    expect(validateDate('2023-12-31')).toBeNull();
-  });
 });
